@@ -25,7 +25,7 @@ Please read “Getting started” and the FAQ as well as the documentation below
 
 ## Documentation
  * General documentation: [Wiki](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki)
- * C++ API: 
+ * C++ API: [Doxygen](https://lemontree-softworks.github.io/Enhanced-Raw-Input/)
 
 ## Change log:
 * 1.0 Inital Release
