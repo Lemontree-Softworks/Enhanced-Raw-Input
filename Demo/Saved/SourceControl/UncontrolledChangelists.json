@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"J:/SimFly X/Plugins/EnhancedRawInputDemo/Content/Variant_Platforming/Input/IMC_Platforming.uasset",
+				"J:/SimFly X/Plugins/EnhancedRawInputDemo/Content/Input/IMC_Default.uasset",
+				"J:/SimFly X/Plugins/EnhancedRawInputDemo/Content/W_Info.uasset",
+				"J:/SimFly X/Plugins/EnhancedRawInputDemo/Content/ThirdPerson/Lvl_ThirdPerson.umap",
+				"J:/SimFly X/Plugins/EnhancedRawInputDemo/Content/Input/IA_ShowInputDebug.uasset"
+			]
+		}
+	]
+}
