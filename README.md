@@ -4,7 +4,7 @@ for Unreal Engine
 ![Enhanced Raw Input Logo](/images/Logo.png)
 
 ## Featues
-* Supports all HID gamepad/joystick devices (steering wheels, flight controllers, joysticks, including gamepads like Xbox and PS Dualshock, etc.)
+* Supports all HID gamepad/joystick devices (steering wheels, flight controllers, joysticks, including gamepads like Xbox Controller, etc.)
 * Hotplug support
 * Support for multiple simultaneously connected devices, e.g. for multiplayer
 * Automatic detection of the axis range and mapping to gamepad range (-1 to +1), axis range (0 to 1) or raw values of the driver (configurable)
@@ -18,10 +18,12 @@ for Unreal Engine
 ## About
 "Enhanced Raw Input" is ideal for supporting all gaming input devices on Windows. All devices recognized by Windows as HID game controllers are supported. It is a direct replacement for the included “Raw Input” plugin with extended capabilities and does not have the limitations of it, such as: no hotplug support, no multiplayer support, or simple use of the D-pad.
 
+For questions and error reports: Please open an [Issue](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/issues).
+
 ## How to use
 Enhanced Raw Input can be purchased at FAB (link here).
 
-Please read “Getting started” and the FAQ as well as the documentation below.
+Please read the [Quck start guide](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/Quick-Start) and the [FAQ](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/FAQ) as well as the documentation below.
 
 See also Demo Project in "Demo" Folder
 
