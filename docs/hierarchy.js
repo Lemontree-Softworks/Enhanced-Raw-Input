@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "FEnhancedInputPOVProperties", "struct_f_enhanced_input_p_o_v_properties.html", null ],
+    [ "FEnhancedInputPovProperties", "struct_f_enhanced_input_pov_properties.html", null ],
     [ "FEnhancedRawInputAxisInfo", "struct_f_enhanced_raw_input_axis_info.html", null ],
     [ "FEnhancedRawInputAxisProperties", "struct_f_enhanced_raw_input_axis_properties.html", null ],
     [ "FEnhancedRawInputButtonProperties", "struct_f_enhanced_raw_input_button_properties.html", null ],
@@ -10,11 +10,12 @@ var hierarchy =
     [ "FEnhancedRawInputKeys", "struct_f_enhanced_raw_input_keys.html", null ],
     [ "FEnhancedRawInputPovInfo", "struct_f_enhanced_raw_input_pov_info.html", null ],
     [ "FHidAxis", "struct_f_hid_axis.html", [
-      [ "FHidPOV", "struct_f_hid_p_o_v.html", null ]
+      [ "FHidPov", "struct_f_hid_pov.html", null ]
     ] ],
     [ "FHidButton", "struct_f_hid_button.html", null ],
     [ "FHidDevice", "struct_f_hid_device.html", null ],
     [ "FProductIdentification", "struct_f_product_identification.html", null ],
+    [ "FWindowsHidApi", "struct_f_windows_hid_api.html", null ],
     [ "IInputDevice", null, [
       [ "IEnhancedRawInput", "class_i_enhanced_raw_input.html", [
         [ "FEnhancedRawInputWindows", "class_f_enhanced_raw_input_windows.html", null ]
@@ -35,5 +36,7 @@ var hierarchy =
     [ "UDeveloperSettings", null, [
       [ "UEnhancedRawInputSettings", "class_u_enhanced_raw_input_settings.html", null ]
     ] ],
-    [ "WindowsHidApi", "struct_windows_hid_api.html", null ]
+    [ "UObject", null, [
+      [ "UEnhancedRawInputBlueprint", "class_u_enhanced_raw_input_blueprint.html", null ]
+    ] ]
 ];

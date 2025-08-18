@@ -1,15 +1,22 @@
 var searchData=
 [
   ['bautoassigncontrollers_0',['bAutoAssignControllers',['../class_u_enhanced_raw_input_settings.html#a54a6a1491dc9743f2091ab9cce619996',1,'UEnhancedRawInputSettings']]],
-  ['baxisinverted_1',['bAxisInverted',['../struct_f_enhanced_input_p_o_v_properties.html#a6f4d02be2a232f8f493500587330d6d9',1,'FEnhancedInputPOVProperties']]],
-  ['benabled_2',['bEnabled',['../struct_f_enhanced_raw_input_axis_properties.html#a2d900d7d59cee7628d085cd207141929',1,'FEnhancedRawInputAxisProperties::bEnabled'],['../struct_f_enhanced_raw_input_button_properties.html#a7237f6460bec8b60c6298e827ef0695b',1,'FEnhancedRawInputButtonProperties::bEnabled'],['../struct_f_enhanced_input_p_o_v_properties.html#a4a6d374b199d3efdd894bac3e7629071',1,'FEnhancedInputPOVProperties::bEnabled']]],
-  ['binverted_3',['bInverted',['../struct_f_enhanced_raw_input_axis_properties.html#aa1182498ae11634796177b1ee28e4e3d',1,'FEnhancedRawInputAxisProperties']]],
-  ['bregisteralldevices_4',['bRegisterAllDevices',['../class_u_enhanced_raw_input_settings.html#a9a88c7846ee971686934266f02e6f231',1,'UEnhancedRawInputSettings']]],
-  ['brevievecontrollerinputsinbackground_5',['bRevieveControllerInputsInBackground',['../class_u_enhanced_raw_input_settings.html#a3754d92f96e5834540b77623a6557da8',1,'UEnhancedRawInputSettings']]],
-  ['buttonkeynames_6',['ButtonKeyNames',['../struct_f_hid_p_o_v.html#adb82305ee55c049fc23fb4b2eb7505c5',1,'FHidPOV']]],
-  ['buttonkeys_7',['ButtonKeys',['../struct_f_enhanced_input_p_o_v_properties.html#a729f53c83c4ba352a6b3e1b2d73a872a',1,'FEnhancedInputPOVProperties']]],
-  ['buttonproperties_8',['ButtonProperties',['../struct_f_enhanced_raw_input_device_configuration.html#a95b5a9be561f63031dda3ffff0f4c989',1,'FEnhancedRawInputDeviceConfiguration']]],
-  ['buttons_9',['Buttons',['../struct_f_hid_device.html#ac43be9d0bdc78e438f938840acc2afde',1,'FHidDevice']]],
-  ['buttonstates_10',['ButtonStates',['../struct_f_hid_p_o_v.html#a36f316c440e94da3e48847bea440cc23',1,'FHidPOV']]],
-  ['buttonusagemin_11',['ButtonUsageMin',['../struct_f_hid_device.html#a1196944b6e904fe2f36e718d8015734e',1,'FHidDevice']]]
+  ['baxisinverted_1',['bAxisInverted',['../struct_f_enhanced_input_pov_properties.html#a352ea37259a8041286ded7be1434051d',1,'FEnhancedInputPovProperties']]],
+  ['benabled_2',['bEnabled',['../struct_f_enhanced_raw_input_axis_properties.html#a2d900d7d59cee7628d085cd207141929',1,'FEnhancedRawInputAxisProperties::bEnabled'],['../struct_f_enhanced_raw_input_button_properties.html#a7237f6460bec8b60c6298e827ef0695b',1,'FEnhancedRawInputButtonProperties::bEnabled'],['../struct_f_enhanced_input_pov_properties.html#aa36ee27afbfeef17580be2a31f1fffdd',1,'FEnhancedInputPovProperties::bEnabled']]],
+  ['bhaschanged_3',['bHasChanged',['../struct_f_hid_axis.html#af9031af9b4e71ef5a97bd500db1521eb',1,'FHidAxis::bHasChanged'],['../struct_f_hid_button.html#af21b55803a08f3ac1121e491ac41556f',1,'FHidButton::bHasChanged']]],
+  ['binverted_4',['bInverted',['../struct_f_enhanced_raw_input_axis_properties.html#aa1182498ae11634796177b1ee28e4e3d',1,'FEnhancedRawInputAxisProperties']]],
+  ['bisactive_5',['bIsActive',['../struct_f_enhanced_raw_input_device_info.html#ad6a6d7e0a343369b260d086b3532a004',1,'FEnhancedRawInputDeviceInfo::bIsActive'],['../struct_f_hid_device.html#a3901379c6da0b411a63944502e5b688f',1,'FHidDevice::bIsActive']]],
+  ['bisconnected_6',['bIsConnected',['../struct_f_enhanced_raw_input_device_info.html#abcb5a46fbb0cd960bbf1bc92f92f31ee',1,'FEnhancedRawInputDeviceInfo']]],
+  ['bisenabled_7',['bIsEnabled',['../struct_f_hid_axis.html#aaadb966016508946006f1cab65b24872',1,'FHidAxis::bIsEnabled'],['../struct_f_hid_button.html#a5ad9afd56a357d67f4607e3f96f5611b',1,'FHidButton::bIsEnabled']]],
+  ['bisinverted_8',['bIsInverted',['../struct_f_hid_axis.html#a85ce965fbe8082103c9937e2da373997',1,'FHidAxis']]],
+  ['breceivecontrollerinputsinbackground_9',['bReceiveControllerInputsInBackground',['../class_u_enhanced_raw_input_settings.html#a984fe87038e038aea1505a50c0371d91',1,'UEnhancedRawInputSettings']]],
+  ['bregisteralldevices_10',['bRegisterAllDevices',['../class_u_enhanced_raw_input_settings.html#a9a88c7846ee971686934266f02e6f231',1,'UEnhancedRawInputSettings']]],
+  ['bstate_11',['bState',['../struct_f_hid_button.html#a9a902e47facc23aec5c30351b2a74253',1,'FHidButton']]],
+  ['buseshareddevice_12',['bUseSharedDevice',['../class_u_enhanced_raw_input_settings.html#a2347c9628d3fdc4d56bca1af62c4aa1e',1,'UEnhancedRawInputSettings']]],
+  ['buttonkeynames_13',['ButtonKeyNames',['../struct_f_hid_pov.html#aff03e9a132b389c2012e532e5aea9cb2',1,'FHidPov']]],
+  ['buttonkeys_14',['ButtonKeys',['../struct_f_enhanced_input_pov_properties.html#a2f241feda3a477f1fac4b2df53d53d76',1,'FEnhancedInputPovProperties']]],
+  ['buttonproperties_15',['ButtonProperties',['../struct_f_enhanced_raw_input_device_configuration.html#a95b5a9be561f63031dda3ffff0f4c989',1,'FEnhancedRawInputDeviceConfiguration']]],
+  ['buttons_16',['Buttons',['../struct_f_hid_device.html#ac43be9d0bdc78e438f938840acc2afde',1,'FHidDevice']]],
+  ['buttonstates_17',['ButtonStates',['../struct_f_hid_pov.html#a65ba82cd74d55134b10f4cee851ada0e',1,'FHidPov']]],
+  ['buttonusagemin_18',['ButtonUsageMin',['../struct_f_hid_device.html#a1196944b6e904fe2f36e718d8015734e',1,'FHidDevice']]]
 ];

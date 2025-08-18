@@ -117,12 +117,21 @@ static TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_device_info.ht
 <tr class="memitem:aa91a6960a374232078c7933478002f13" id="r_aa91a6960a374232078c7933478002f13"><td class="memItemLeft" align="right" valign="top"><a id="aa91a6960a374232078c7933478002f13" name="aa91a6960a374232078c7933478002f13"></a>
 static <a class="el" href="struct_f_enhanced_raw_input_device_info.html">FEnhancedRawInputDeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceInfoByUserIdAndDeviceId</b> (const FPlatformUserId UserId, const FInputDeviceId DeviceId)</td></tr>
 <tr class="memdesc:aa91a6960a374232078c7933478002f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about a connected devices based on the specified User ID and Device ID. <br /></td></tr>
+<tr class="memitem:a3f50a71bc37718f686c504e57a7b7f06" id="r_a3f50a71bc37718f686c504e57a7b7f06"><td class="memItemLeft" align="right" valign="top"><a id="a3f50a71bc37718f686c504e57a7b7f06" name="a3f50a71bc37718f686c504e57a7b7f06"></a>
+static <a class="el" href="struct_f_enhanced_raw_input_device_info.html">FEnhancedRawInputDeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceInfoByInterfaceName</b> (const FString InterfaceName)</td></tr>
+<tr class="memdesc:a3f50a71bc37718f686c504e57a7b7f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about a connected devices based on the specified interface name. <br /></td></tr>
 <tr class="memitem:ad0d8cfd8c50c547346c775f6320128a2" id="r_ad0d8cfd8c50c547346c775f6320128a2"><td class="memItemLeft" align="right" valign="top"><a id="ad0d8cfd8c50c547346c775f6320128a2" name="ad0d8cfd8c50c547346c775f6320128a2"></a>
 static TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_axis_info.html">FEnhancedRawInputAxisInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAxisInfosForDevice</b> (const FString InterfaceName)</td></tr>
 <tr class="memdesc:ad0d8cfd8c50c547346c775f6320128a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all axis for a specific device. <br /></td></tr>
 <tr class="memitem:a488a0d7562bbb98096b81d1155618d2e" id="r_a488a0d7562bbb98096b81d1155618d2e"><td class="memItemLeft" align="right" valign="top"><a id="a488a0d7562bbb98096b81d1155618d2e" name="a488a0d7562bbb98096b81d1155618d2e"></a>
 static TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_pov_info.html">FEnhancedRawInputPovInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPovInfosForDevice</b> (const FString InterfaceName)</td></tr>
-<tr class="memdesc:a488a0d7562bbb98096b81d1155618d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all POVs for a specific device. <br /></td></tr>
+<tr class="memdesc:a488a0d7562bbb98096b81d1155618d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all PoVs for a specific device. <br /></td></tr>
+<tr class="memitem:ae6b24ef4440616cc6e391edb2cd79866" id="r_ae6b24ef4440616cc6e391edb2cd79866"><td class="memItemLeft" align="right" valign="top"><a id="ae6b24ef4440616cc6e391edb2cd79866" name="ae6b24ef4440616cc6e391edb2cd79866"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeviceActivity</b> (const FString InterfaceName, bool bIsActive)</td></tr>
+<tr class="memdesc:ae6b24ef4440616cc6e391edb2cd79866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activity of the device. <br /></td></tr>
+<tr class="memitem:aaa92e890bfb935332e743d76a0e6bcc2" id="r_aaa92e890bfb935332e743d76a0e6bcc2"><td class="memItemLeft" align="right" valign="top"><a id="aaa92e890bfb935332e743d76a0e6bcc2" name="aaa92e890bfb935332e743d76a0e6bcc2"></a>
+static <a class="el" href="class_u_enhanced_raw_input_blueprint.html">UEnhancedRawInputBlueprint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnhancedRawInputBlueprint</b> ()</td></tr>
+<tr class="memdesc:aaa92e890bfb935332e743d76a0e6bcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a '<a class="el" href="class_u_enhanced_raw_input_blueprint.html" title="Helper class to provide connected/disconnected events to blueprints.">UEnhancedRawInputBlueprint</a>' Object, that can be used to receive device connect and disconnect events. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to use from Blueprints. </p>
@@ -146,8 +155,8 @@ static TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_pov_info.html"
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Public/<a class="el" href="_enhanced_raw_input_function_library_8h_source.html">EnhancedRawInputFunctionLibrary.h</a></li>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Private/<b>EnhancedRawInputFunctionLibrary.cpp</b></li>
+<li><a class="el" href="_enhanced_raw_input_function_library_8h_source.html">EnhancedRawInputFunctionLibrary.h</a></li>
+<li><b>EnhancedRawInputFunctionLibrary.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -2,9 +2,9 @@ var struct_f_hid_axis =
 [
     [ "GetValue", "struct_f_hid_axis.html#a91b1bb60b292b80a09ce3decba947e24", null ],
     [ "HasValue", "struct_f_hid_axis.html#aef8ed6d5189d8120826218d3075b4f15", null ],
-    [ "HasChanged", "struct_f_hid_axis.html#a86bbec1009f8b6183095696fa822f5b8", null ],
-    [ "IsEnabled", "struct_f_hid_axis.html#a423b223923ad7f9f2b238d0dff6ddea6", null ],
-    [ "IsInverted", "struct_f_hid_axis.html#ae78ff9972f30a6704f05a7b6d011d1f4", null ],
+    [ "bHasChanged", "struct_f_hid_axis.html#af9031af9b4e71ef5a97bd500db1521eb", null ],
+    [ "bIsEnabled", "struct_f_hid_axis.html#aaadb966016508946006f1cab65b24872", null ],
+    [ "bIsInverted", "struct_f_hid_axis.html#a85ce965fbe8082103c9937e2da373997", null ],
     [ "KeyName", "struct_f_hid_axis.html#a6e24bb9c18196d37e176efa5e5d44218", null ],
     [ "Max", "struct_f_hid_axis.html#a1251755e49b37efda84ad24aeac76b8f", null ],
     [ "Min", "struct_f_hid_axis.html#a701640c9b7c82ae0d6f01d355c033466", null ],
