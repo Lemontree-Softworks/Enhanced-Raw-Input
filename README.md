@@ -21,7 +21,7 @@ for Unreal Engine
 For questions and error reports: Please open an [Issue](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/issues).
 
 ## How to use
-Enhanced Raw Input can be purchased at [FAB](https://www.fab.com/listings/e88b6d4f-9c9e-4660-a93c-065f8f7b9fb8).
+Enhanced Raw Input can be purchased at [FAB](https://www.fab.com/listings/ea8f4721-096d-4586-aedf-91f849c9d343).
 
 Please read the [Quick start guide](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/Quick-Start) and the [FAQ](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/FAQ) as well as the documentation below.
 
