@@ -104,7 +104,7 @@ Inheritance diagram for FHidAxis:</div>
  <div class="center">
   <img src="struct_f_hid_axis.png" usemap="#FHidAxis_map" alt=""/>
   <map id="FHidAxis_map" name="FHidAxis_map">
-<area href="struct_f_hid_p_o_v.html" title="Stores information and data about a HID POV / Hat Switch / D-PAD." alt="FHidPOV" shape="rect" coords="0,56,66,80"/>
+<area href="struct_f_hid_pov.html" title="Stores information and data about a HID POV / Hat Switch / D-PAD." alt="FHidPov" shape="rect" coords="0,56,63,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -123,9 +123,9 @@ int32&#160;</td><td class="memItemRight" valign="bottom"><b>Value</b></td></tr>
 <tr class="memitem:a6e24bb9c18196d37e176efa5e5d44218" id="r_a6e24bb9c18196d37e176efa5e5d44218"><td class="memItemLeft" align="right" valign="top"><a id="a6e24bb9c18196d37e176efa5e5d44218" name="a6e24bb9c18196d37e176efa5e5d44218"></a>
 FName&#160;</td><td class="memItemRight" valign="bottom"><b>KeyName</b></td></tr>
 <tr class="memdesc:a6e24bb9c18196d37e176efa5e5d44218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bound Keyname. <br /></td></tr>
-<tr class="memitem:a423b223923ad7f9f2b238d0dff6ddea6" id="r_a423b223923ad7f9f2b238d0dff6ddea6"><td class="memItemLeft" align="right" valign="top"><a id="a423b223923ad7f9f2b238d0dff6ddea6" name="a423b223923ad7f9f2b238d0dff6ddea6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabled</b></td></tr>
-<tr class="memdesc:a423b223923ad7f9f2b238d0dff6ddea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if axis is enabeld in settings. <br /></td></tr>
+<tr class="memitem:aaadb966016508946006f1cab65b24872" id="r_aaadb966016508946006f1cab65b24872"><td class="memItemLeft" align="right" valign="top"><a id="aaadb966016508946006f1cab65b24872" name="aaadb966016508946006f1cab65b24872"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bIsEnabled</b></td></tr>
+<tr class="memdesc:aaadb966016508946006f1cab65b24872"><td class="mdescLeft">&#160;</td><td class="mdescRight">TRUE if axis is enabeld in settings. <br /></td></tr>
 <tr class="memitem:a7dafdf63438e6a589cf0c6aafbddc3b6" id="r_a7dafdf63438e6a589cf0c6aafbddc3b6"><td class="memItemLeft" align="right" valign="top"><a id="a7dafdf63438e6a589cf0c6aafbddc3b6" name="a7dafdf63438e6a589cf0c6aafbddc3b6"></a>
 ERawInputAxisOutputType&#160;</td><td class="memItemRight" valign="bottom"><b>OutputType</b></td></tr>
 <tr class="memdesc:a7dafdf63438e6a589cf0c6aafbddc3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configured output type. <br /></td></tr>
@@ -138,12 +138,12 @@ int32&#160;</td><td class="memItemRight" valign="bottom"><b>Max</b></td></tr>
 <tr class="memitem:a106e2ea376d02ac3e785a9b0eec37a8d" id="r_a106e2ea376d02ac3e785a9b0eec37a8d"><td class="memItemLeft" align="right" valign="top"><a id="a106e2ea376d02ac3e785a9b0eec37a8d" name="a106e2ea376d02ac3e785a9b0eec37a8d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Offset</b></td></tr>
 <tr class="memdesc:a106e2ea376d02ac3e785a9b0eec37a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Axis offset as configured. <br /></td></tr>
-<tr class="memitem:ae78ff9972f30a6704f05a7b6d011d1f4" id="r_ae78ff9972f30a6704f05a7b6d011d1f4"><td class="memItemLeft" align="right" valign="top"><a id="ae78ff9972f30a6704f05a7b6d011d1f4" name="ae78ff9972f30a6704f05a7b6d011d1f4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInverted</b></td></tr>
-<tr class="memdesc:ae78ff9972f30a6704f05a7b6d011d1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheter is axis inverted (from Configuration) <br /></td></tr>
-<tr class="memitem:a86bbec1009f8b6183095696fa822f5b8" id="r_a86bbec1009f8b6183095696fa822f5b8"><td class="memItemLeft" align="right" valign="top"><a id="a86bbec1009f8b6183095696fa822f5b8" name="a86bbec1009f8b6183095696fa822f5b8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasChanged</b></td></tr>
-<tr class="memdesc:a86bbec1009f8b6183095696fa822f5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheter value has changed since last HID event. <br /></td></tr>
+<tr class="memitem:a85ce965fbe8082103c9937e2da373997" id="r_a85ce965fbe8082103c9937e2da373997"><td class="memItemLeft" align="right" valign="top"><a id="a85ce965fbe8082103c9937e2da373997" name="a85ce965fbe8082103c9937e2da373997"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bIsInverted</b></td></tr>
+<tr class="memdesc:a85ce965fbe8082103c9937e2da373997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheter is axis inverted (from Configuration) <br /></td></tr>
+<tr class="memitem:af9031af9b4e71ef5a97bd500db1521eb" id="r_af9031af9b4e71ef5a97bd500db1521eb"><td class="memItemLeft" align="right" valign="top"><a id="af9031af9b4e71ef5a97bd500db1521eb" name="af9031af9b4e71ef5a97bd500db1521eb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bHasChanged</b></td></tr>
+<tr class="memdesc:af9031af9b4e71ef5a97bd500db1521eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheter value has changed since last HID event. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores information and data about a HID Axis. </p>
@@ -189,8 +189,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasChanged</b></td></
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Public/Windows/<a class="el" href="_enhanced_raw_input_windows_8h_source.html">EnhancedRawInputWindows.h</a></li>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Private/Windows/<b>EnhancedRawInputWindows.cpp</b></li>
+<li><a class="el" href="_enhanced_raw_input_windows_8h_source.html">EnhancedRawInputWindows.h</a></li>
+<li><b>EnhancedRawInputWindows.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

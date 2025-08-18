@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>IEnhancedRawInput</b> (const TSharedRef&lt; FGenericApplicationMessageHandler &gt; &amp;InMessageHandler)</td></tr>
 <tr class="memitem:ae584a5ddd74fe34117c70dfb143b2fda" id="r_ae584a5ddd74fe34117c70dfb143b2fda"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae584a5ddd74fe34117c70dfb143b2fda">SetBindings</a> (const FString InterfaceName)</td></tr>
 <tr class="memdesc:ae584a5ddd74fe34117c70dfb143b2fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the key binding settings to the specified controller.  <br /></td></tr>
-<tr class="memitem:ab68d770190eadaa656df398128459efc" id="r_ab68d770190eadaa656df398128459efc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab68d770190eadaa656df398128459efc">SetAxisBinding</a> (const FString InterfaceName, const EHidAxisUseages AxisUsage, const FName KeyName)</td></tr>
-<tr class="memdesc:ab68d770190eadaa656df398128459efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a controller axis to a corresponding key.  <br /></td></tr>
+<tr class="memitem:ad0920e4f9056187346f694980c386b2a" id="r_ad0920e4f9056187346f694980c386b2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0920e4f9056187346f694980c386b2a">SetAxisBinding</a> (const FString InterfaceName, const int32 AxisUsage, const FName KeyName)</td></tr>
+<tr class="memdesc:ad0920e4f9056187346f694980c386b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a controller axis to a corresponding key.  <br /></td></tr>
 <tr class="memitem:af34612bf51ed059ff21b9ce224d4c81f" id="r_af34612bf51ed059ff21b9ce224d4c81f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af34612bf51ed059ff21b9ce224d4c81f">SetButtonBinding</a> (const FString InterfaceName, const int32 ButtonIndex, const FName KeyName)</td></tr>
 <tr class="memdesc:af34612bf51ed059ff21b9ce224d4c81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a controller button to a corresponding key.  <br /></td></tr>
 <tr class="memitem:a5e4502a71da018989bf432283f853071" id="r_a5e4502a71da018989bf432283f853071"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e4502a71da018989bf432283f853071">SetPovAxisBinding</a> (const FString InterfaceName, const int32 PovIndex, FName KeyName)</td></tr>
@@ -163,8 +163,8 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a id="ab68d770190eadaa656df398128459efc" name="ab68d770190eadaa656df398128459efc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab68d770190eadaa656df398128459efc">&#9670;&#160;</a></span>SetAxisBinding()</h2>
+<a id="ad0920e4f9056187346f694980c386b2a" name="ad0920e4f9056187346f694980c386b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0920e4f9056187346f694980c386b2a">&#9670;&#160;</a></span>SetAxisBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +180,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const EHidAxisUseages</td>          <td class="paramname"><span class="paramname"><em>AxisUsage</em></span>, </td>
+          <td class="paramtype">const int32</td>          <td class="paramname"><span class="paramname"><em>AxisUsage</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -205,7 +205,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_f_enhanced_raw_input_windows.html#a2a6604ed5fc3a915ddda091274553db9">FEnhancedRawInputWindows</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_enhanced_raw_input_windows.html#aeb1b33ab5f7ce4bbddf7466fab8ffa92">FEnhancedRawInputWindows</a>.</p>
 
 </div>
 </div>
@@ -383,8 +383,8 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Public/<a class="el" href="_enhanced_raw_input_8h_source.html">EnhancedRawInput.h</a></li>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Private/<b>EnhancedRawInput.cpp</b></li>
+<li><a class="el" href="_enhanced_raw_input_8h_source.html">EnhancedRawInput.h</a></li>
+<li><b>EnhancedRawInput.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

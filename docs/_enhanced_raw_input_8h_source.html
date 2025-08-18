@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Enhanced Raw Input: J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Public/EnhancedRawInput.h Source File</title>
+<title>Enhanced Raw Input: EnhancedRawInput.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,123 +94,93 @@ $(function(){initNavTree('_enhanced_raw_input_8h_source.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// (c) 2025 by Lemontree Softworks - All Rights Reserved.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;CoreMinimal.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Modules/ModuleManager.h&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;IInputDeviceModule.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;IInputDevice.h&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;GenericPlatform/GenericApplicationMessageHandler.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define MAX_ENHANCED_RAW_INPUT_AXIS 8</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define MAX_ENHANCED_RAW_INPUT_BUTTONS 128</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define MAX_ENHANCED_RAW_INPUT_POVS 4</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>DECLARE_DELEGATE_RetVal_TwoParams(<span class="keywordtype">bool</span>, FEnhancedRawInputDataDelegate, int32 <span class="comment">/*DataSize*/</span>, <span class="keyword">const</span> <span class="keyword">struct</span> tagRAWINPUT* <span class="comment">/*Data */</span>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>UENUM(BlueprintType)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">enum class</span> ERawInputAxisOutputType : uint8</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Raw,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Gamepad,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Axis</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>UENUM(BlueprintType)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">enum class</span> ERawInputPOVOutputType : uint8</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Raw,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    Gamepd,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Axis,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    POV</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>UENUM(BlueprintType)</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">enum class</span> EHidAxisUseages : uint8</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    None   = 0x00 UMETA(DisplayName = <span class="stringliteral">&quot;None&quot;</span>),</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    XAxis  = 0x30 UMETA(DisplayName = <span class="stringliteral">&quot;X Axis&quot;</span>),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    YAxis  = 0x31 UMETA(DisplayName = <span class="stringliteral">&quot;Y Axis&quot;</span>),</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    ZAxis  = 0x32 UMETA(DisplayName = <span class="stringliteral">&quot;Z Axis&quot;</span>),</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    RxAxis = 0x33 UMETA(DisplayName = <span class="stringliteral">&quot;RX Axis&quot;</span>),</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    RyAxis = 0x34 UMETA(DisplayName = <span class="stringliteral">&quot;RY Axis&quot;</span>),</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    RzAxis = 0x35 UMETA(DisplayName = <span class="stringliteral">&quot;RZ Axis&quot;</span>),</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    Slider = 0x36 UMETA(DisplayName = <span class="stringliteral">&quot;Slider&quot;</span>),</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Dial   = 0x37 UMETA(DisplayName = <span class="stringliteral">&quot;Dial&quot;</span>),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Wheel  = 0x38 UMETA(DisplayName = <span class="stringliteral">&quot;Wheel&quot;</span>)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html">   61</a></span><span class="keyword">class </span>IEnhancedRawInput : <span class="keyword">public</span> IInputDevice</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    IEnhancedRawInput(<span class="keyword">const</span> TSharedRef&lt;FGenericApplicationMessageHandler&gt; &amp;InMessageHandler);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">virtual</span> ~IEnhancedRawInput() {};</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#ae584a5ddd74fe34117c70dfb143b2fda">   68</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#ae584a5ddd74fe34117c70dfb143b2fda">SetBindings</a>(<span class="keyword">const</span> FString InterfaceName) {}</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#ab68d770190eadaa656df398128459efc">   74</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#ab68d770190eadaa656df398128459efc">SetAxisBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> EHidAxisUseages AxisUsage, <span class="keyword">const</span> FName KeyName) {}</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;CoreMinimal.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;Modules/ModuleManager.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;IInputDeviceModule.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;IInputDevice.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;GenericPlatform/GenericApplicationMessageHandler.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> MaxEnhancedRawInputAxis = 8;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> MaxEnhancedRawInputButtons = 128;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> MaxEnhancedRawInputPovs = 4;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>DECLARE_DELEGATE_RetVal_TwoParams(<span class="keywordtype">bool</span>, FEnhancedRawInputDataDelegate, int32 <span class="comment">/*DataSize*/</span>, <span class="keyword">const</span> <span class="keyword">struct</span> tagRAWINPUT* <span class="comment">/*Data */</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html">   21</a></span><span class="keyword">class </span>IEnhancedRawInput : <span class="keyword">public</span> IInputDevice</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    IEnhancedRawInput(<span class="keyword">const</span> TSharedRef&lt;FGenericApplicationMessageHandler&gt; &amp;InMessageHandler);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">virtual</span> ~IEnhancedRawInput() {};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#ae584a5ddd74fe34117c70dfb143b2fda">   28</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#ae584a5ddd74fe34117c70dfb143b2fda">SetBindings</a>(<span class="keyword">const</span> FString InterfaceName) {}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#ad0920e4f9056187346f694980c386b2a">   34</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#ad0920e4f9056187346f694980c386b2a">SetAxisBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 AxisUsage, <span class="keyword">const</span> FName KeyName) {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#af34612bf51ed059ff21b9ce224d4c81f">   40</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#af34612bf51ed059ff21b9ce224d4c81f">SetButtonBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 ButtonIndex, <span class="keyword">const</span> FName KeyName) {}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#a5e4502a71da018989bf432283f853071">   46</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#a5e4502a71da018989bf432283f853071">SetPovAxisBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 PovIndex, FName KeyName) {}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#a492e12167c791723771960f523945bbe">   52</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#a492e12167c791723771960f523945bbe">SetPovButtonBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 PovIndex, TArray&lt;FName&gt; KeyNames) {}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">   56</a></span>    FEnhancedRawInputDataDelegate&amp; <a class="code hl_function" href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">GetDataReceivedHandler</a>() { <span class="keywordflow">return</span> DataReceivedHandler; }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    TSharedRef&lt;FGenericApplicationMessageHandler&gt; MessageHandler;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    FEnhancedRawInputDataDelegate DataReceivedHandler;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html">   65</a></span><span class="keyword">class </span><a class="code hl_class" href="class_f_enhanced_raw_input_plugin.html">FEnhancedRawInputPlugin</a> : <span class="keyword">public</span> IInputDeviceModule</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">virtual</span> TSharedPtr&lt;IInputDevice&gt; CreateInputDevice(<span class="keyword">const</span> TSharedRef&lt;FGenericApplicationMessageHandler&gt; &amp;InMessageHandler) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    TSharedPtr&lt;class IEnhancedRawInput&gt; EnhancedRawInput;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html#aed867daee479060d33b772a69b0ee15c">   74</a></span>    TSharedPtr&lt;class IEnhancedRawInput&gt;&amp; <a class="code hl_function" href="class_f_enhanced_raw_input_plugin.html#aed867daee479060d33b772a69b0ee15c">GetEnhancedRawInput</a>() { <span class="keywordflow">return</span> EnhancedRawInput; }</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#af34612bf51ed059ff21b9ce224d4c81f">   80</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#af34612bf51ed059ff21b9ce224d4c81f">SetButtonBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 ButtonIndex, <span class="keyword">const</span> FName KeyName) {}</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#a5e4502a71da018989bf432283f853071">   86</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#a5e4502a71da018989bf432283f853071">SetPovAxisBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 PovIndex, FName KeyName) {}</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#a492e12167c791723771960f523945bbe">   92</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i_enhanced_raw_input.html#a492e12167c791723771960f523945bbe">SetPovButtonBinding</a>(<span class="keyword">const</span> FString InterfaceName, <span class="keyword">const</span> int32 PovIndex, TArray&lt;FName&gt; KeyNames) {}</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">   96</a></span>    FEnhancedRawInputDataDelegate&amp; <a class="code hl_function" href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">GetDataReceivedHandler</a>() { <span class="keywordflow">return</span> DataReceivedHandler; }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    TSharedRef&lt;FGenericApplicationMessageHandler&gt; MessageHandler;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    FEnhancedRawInputDataDelegate DataReceivedHandler;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> StartupModule() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ShutdownModule() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html#acdb619eb2259f66e35b9ca5faf7a8cbf">   81</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="class_f_enhanced_raw_input_plugin.html">FEnhancedRawInputPlugin</a>&amp; <a class="code hl_function" href="class_f_enhanced_raw_input_plugin.html#acdb619eb2259f66e35b9ca5faf7a8cbf">Get</a>()</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> FModuleManager::LoadModuleChecked&lt;FEnhancedRawInputPlugin&gt;(<span class="stringliteral">&quot;EnhancedRawInput&quot;</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
-<div class="foldopen" id="foldopen00105" data-start="{" data-end="};">
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html">  105</a></span><span class="keyword">class </span><a class="code hl_class" href="class_f_enhanced_raw_input_plugin.html">FEnhancedRawInputPlugin</a> : <span class="keyword">public</span> IInputDeviceModule</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">virtual</span> TSharedPtr&lt;IInputDevice&gt; CreateInputDevice(<span class="keyword">const</span> TSharedRef&lt;FGenericApplicationMessageHandler&gt; &amp;InMessageHandler) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    TSharedPtr&lt;class IEnhancedRawInput&gt; EnhancedRawInput;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html#aed867daee479060d33b772a69b0ee15c">  114</a></span>    TSharedPtr&lt;class IEnhancedRawInput&gt;&amp; <a class="code hl_function" href="class_f_enhanced_raw_input_plugin.html#aed867daee479060d33b772a69b0ee15c">GetEnhancedRawInput</a>() { <span class="keywordflow">return</span> EnhancedRawInput; }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> StartupModule() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> ShutdownModule() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span></div>
-<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html#acdb619eb2259f66e35b9ca5faf7a8cbf">  121</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code hl_class" href="class_f_enhanced_raw_input_plugin.html">FEnhancedRawInputPlugin</a>&amp; <a class="code hl_function" href="class_f_enhanced_raw_input_plugin.html#acdb619eb2259f66e35b9ca5faf7a8cbf">Get</a>()</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> FModuleManager::LoadModuleChecked&lt;FEnhancedRawInputPlugin&gt;(<span class="stringliteral">&quot;EnhancedRawInput&quot;</span>);</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html#ad1625cfd3b5c848356c99c4e9177ab60">   88</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f_enhanced_raw_input_plugin.html#ad1625cfd3b5c848356c99c4e9177ab60">IsAvailable</a>()</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> FModuleManager::Get().IsModuleLoaded(<span class="stringliteral">&quot;EnhancedRawInput&quot;</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
-<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_f_enhanced_raw_input_plugin.html#ad1625cfd3b5c848356c99c4e9177ab60">  128</a></span>    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_f_enhanced_raw_input_plugin.html#ad1625cfd3b5c848356c99c4e9177ab60">IsAvailable</a>()</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">return</span> FModuleManager::Get().IsModuleLoaded(<span class="stringliteral">&quot;EnhancedRawInput&quot;</span>);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
 </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
-</div>
-<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html">FEnhancedRawInputPlugin</a></div><div class="ttdoc">The Plugin class, implements IInputDeviceModule.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:106</div></div>
-<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html_acdb619eb2259f66e35b9ca5faf7a8cbf"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html#acdb619eb2259f66e35b9ca5faf7a8cbf">FEnhancedRawInputPlugin::Get</a></div><div class="ttdeci">static FEnhancedRawInputPlugin &amp; Get()</div><div class="ttdoc">Loads Enhanced Raw Input Plugin, checking to ensure it exists.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:121</div></div>
-<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html_ad1625cfd3b5c848356c99c4e9177ab60"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html#ad1625cfd3b5c848356c99c4e9177ab60">FEnhancedRawInputPlugin::IsAvailable</a></div><div class="ttdeci">static bool IsAvailable()</div><div class="ttdoc">Checks if module is avaiable.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:128</div></div>
-<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html_aed867daee479060d33b772a69b0ee15c"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html#aed867daee479060d33b772a69b0ee15c">FEnhancedRawInputPlugin::GetEnhancedRawInput</a></div><div class="ttdeci">TSharedPtr&lt; class IEnhancedRawInput &gt; &amp; GetEnhancedRawInput()</div><div class="ttdoc">Gets a pointer to the Enhanced Raw Input object.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:114</div></div>
-<div class="ttc" id="aclass_i_enhanced_raw_input_html_a492e12167c791723771960f523945bbe"><div class="ttname"><a href="class_i_enhanced_raw_input.html#a492e12167c791723771960f523945bbe">IEnhancedRawInput::SetPovButtonBinding</a></div><div class="ttdeci">virtual void SetPovButtonBinding(const FString InterfaceName, const int32 PovIndex, TArray&lt; FName &gt; KeyNames)</div><div class="ttdoc">Binds a controller POV to a corresponding keys.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:92</div></div>
-<div class="ttc" id="aclass_i_enhanced_raw_input_html_a5e4502a71da018989bf432283f853071"><div class="ttname"><a href="class_i_enhanced_raw_input.html#a5e4502a71da018989bf432283f853071">IEnhancedRawInput::SetPovAxisBinding</a></div><div class="ttdeci">virtual void SetPovAxisBinding(const FString InterfaceName, const int32 PovIndex, FName KeyName)</div><div class="ttdoc">Binds a controller POV axis to a corresponding key.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:86</div></div>
-<div class="ttc" id="aclass_i_enhanced_raw_input_html_ab68d770190eadaa656df398128459efc"><div class="ttname"><a href="class_i_enhanced_raw_input.html#ab68d770190eadaa656df398128459efc">IEnhancedRawInput::SetAxisBinding</a></div><div class="ttdeci">virtual void SetAxisBinding(const FString InterfaceName, const EHidAxisUseages AxisUsage, const FName KeyName)</div><div class="ttdoc">Binds a controller axis to a corresponding key.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:74</div></div>
-<div class="ttc" id="aclass_i_enhanced_raw_input_html_abce420efad54a8e2ffccba9463aa1977"><div class="ttname"><a href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">IEnhancedRawInput::GetDataReceivedHandler</a></div><div class="ttdeci">FEnhancedRawInputDataDelegate &amp; GetDataReceivedHandler()</div><div class="ttdoc">Delegete for raw, unprocessed HID data.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:96</div></div>
-<div class="ttc" id="aclass_i_enhanced_raw_input_html_ae584a5ddd74fe34117c70dfb143b2fda"><div class="ttname"><a href="class_i_enhanced_raw_input.html#ae584a5ddd74fe34117c70dfb143b2fda">IEnhancedRawInput::SetBindings</a></div><div class="ttdeci">virtual void SetBindings(const FString InterfaceName)</div><div class="ttdoc">Applies the key binding settings to the specified controller.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:68</div></div>
-<div class="ttc" id="aclass_i_enhanced_raw_input_html_af34612bf51ed059ff21b9ce224d4c81f"><div class="ttname"><a href="class_i_enhanced_raw_input.html#af34612bf51ed059ff21b9ce224d4c81f">IEnhancedRawInput::SetButtonBinding</a></div><div class="ttdeci">virtual void SetButtonBinding(const FString InterfaceName, const int32 ButtonIndex, const FName KeyName)</div><div class="ttdoc">Binds a controller button to a corresponding key.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:80</div></div>
+<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html">FEnhancedRawInputPlugin</a></div><div class="ttdoc">The Plugin class, implements IInputDeviceModule.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:66</div></div>
+<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html_acdb619eb2259f66e35b9ca5faf7a8cbf"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html#acdb619eb2259f66e35b9ca5faf7a8cbf">FEnhancedRawInputPlugin::Get</a></div><div class="ttdeci">static FEnhancedRawInputPlugin &amp; Get()</div><div class="ttdoc">Loads Enhanced Raw Input Plugin, checking to ensure it exists.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:81</div></div>
+<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html_ad1625cfd3b5c848356c99c4e9177ab60"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html#ad1625cfd3b5c848356c99c4e9177ab60">FEnhancedRawInputPlugin::IsAvailable</a></div><div class="ttdeci">static bool IsAvailable()</div><div class="ttdoc">Checks if module is avaiable.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:88</div></div>
+<div class="ttc" id="aclass_f_enhanced_raw_input_plugin_html_aed867daee479060d33b772a69b0ee15c"><div class="ttname"><a href="class_f_enhanced_raw_input_plugin.html#aed867daee479060d33b772a69b0ee15c">FEnhancedRawInputPlugin::GetEnhancedRawInput</a></div><div class="ttdeci">TSharedPtr&lt; class IEnhancedRawInput &gt; &amp; GetEnhancedRawInput()</div><div class="ttdoc">Gets a pointer to the Enhanced Raw Input object.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:74</div></div>
+<div class="ttc" id="aclass_i_enhanced_raw_input_html_a492e12167c791723771960f523945bbe"><div class="ttname"><a href="class_i_enhanced_raw_input.html#a492e12167c791723771960f523945bbe">IEnhancedRawInput::SetPovButtonBinding</a></div><div class="ttdeci">virtual void SetPovButtonBinding(const FString InterfaceName, const int32 PovIndex, TArray&lt; FName &gt; KeyNames)</div><div class="ttdoc">Binds a controller POV to a corresponding keys.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:52</div></div>
+<div class="ttc" id="aclass_i_enhanced_raw_input_html_a5e4502a71da018989bf432283f853071"><div class="ttname"><a href="class_i_enhanced_raw_input.html#a5e4502a71da018989bf432283f853071">IEnhancedRawInput::SetPovAxisBinding</a></div><div class="ttdeci">virtual void SetPovAxisBinding(const FString InterfaceName, const int32 PovIndex, FName KeyName)</div><div class="ttdoc">Binds a controller POV axis to a corresponding key.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:46</div></div>
+<div class="ttc" id="aclass_i_enhanced_raw_input_html_abce420efad54a8e2ffccba9463aa1977"><div class="ttname"><a href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">IEnhancedRawInput::GetDataReceivedHandler</a></div><div class="ttdeci">FEnhancedRawInputDataDelegate &amp; GetDataReceivedHandler()</div><div class="ttdoc">Delegete for raw, unprocessed HID data.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:56</div></div>
+<div class="ttc" id="aclass_i_enhanced_raw_input_html_ad0920e4f9056187346f694980c386b2a"><div class="ttname"><a href="class_i_enhanced_raw_input.html#ad0920e4f9056187346f694980c386b2a">IEnhancedRawInput::SetAxisBinding</a></div><div class="ttdeci">virtual void SetAxisBinding(const FString InterfaceName, const int32 AxisUsage, const FName KeyName)</div><div class="ttdoc">Binds a controller axis to a corresponding key.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:34</div></div>
+<div class="ttc" id="aclass_i_enhanced_raw_input_html_ae584a5ddd74fe34117c70dfb143b2fda"><div class="ttname"><a href="class_i_enhanced_raw_input.html#ae584a5ddd74fe34117c70dfb143b2fda">IEnhancedRawInput::SetBindings</a></div><div class="ttdeci">virtual void SetBindings(const FString InterfaceName)</div><div class="ttdoc">Applies the key binding settings to the specified controller.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:28</div></div>
+<div class="ttc" id="aclass_i_enhanced_raw_input_html_af34612bf51ed059ff21b9ce224d4c81f"><div class="ttname"><a href="class_i_enhanced_raw_input.html#af34612bf51ed059ff21b9ce224d4c81f">IEnhancedRawInput::SetButtonBinding</a></div><div class="ttdeci">virtual void SetButtonBinding(const FString InterfaceName, const int32 ButtonIndex, const FName KeyName)</div><div class="ttdoc">Binds a controller button to a corresponding key.</div><div class="ttdef"><b>Definition</b> EnhancedRawInput.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_2d15d0715a2692171bd03ed14a4a79af.html">Unreal</a></li><li class="navelem"><a href="dir_c0c49d2ed003ff776c7672f3d58c90e5.html">Plugins</a></li><li class="navelem"><a href="dir_4365c6a3ff78c18597cdc1fbb7d207eb.html">UEEnhancedRawInput</a></li><li class="navelem"><a href="dir_0b658fbac4755555d7dc9387d4ec7a4c.html">Source</a></li><li class="navelem"><a href="dir_c0a653550bbc22d095f6dda7d02f1b6b.html">EnhancedRawInput</a></li><li class="navelem"><a href="dir_7ed4afa6cce341362d54b0a072c79e6f.html">Public</a></li><li class="navelem"><b>EnhancedRawInput.h</b></li>
+    <li class="navelem"><a href="dir_39f16a36e1801e884fe807b77a8f625f.html">DirectInputTest</a></li><li class="navelem"><a href="dir_03e9484b8f3693b138c961ae23752770.html">Plugins</a></li><li class="navelem"><a href="dir_df38b3d0a78f3fca3e180053ec1c358a.html">UEEnhancedRawInput</a></li><li class="navelem"><a href="dir_f2a8d5c0d5647b09adc6e542898b18cd.html">Source</a></li><li class="navelem"><a href="dir_4337afe05a76e9b91b78d04c30bfe79e.html">EnhancedRawInput</a></li><li class="navelem"><a href="dir_99f5dbd394b7bf0f8d46f4cddc5152f8.html">Public</a></li><li class="navelem"><b>EnhancedRawInput.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

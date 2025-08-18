@@ -94,7 +94,7 @@ $(function(){initNavTree('class_u_enhanced_raw_input_settings.html','','class_u_
 </div><!--header-->
 <div class="contents">
 
-<p>Plugin settings, used in Unreal Editor.  
+<p>General Plugin settings.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_enhanced_raw_input_settings_8h_source.html">EnhancedRawInputSettings.h</a>&gt;</code></p>
@@ -113,13 +113,14 @@ virtual FName&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategoryN
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9a88c7846ee971686934266f02e6f231" id="r_a9a88c7846ee971686934266f02e6f231"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a88c7846ee971686934266f02e6f231">bRegisterAllDevices</a> = true</td></tr>
+<tr class="memitem:a2347c9628d3fdc4d56bca1af62c4aa1e" id="r_a2347c9628d3fdc4d56bca1af62c4aa1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2347c9628d3fdc4d56bca1af62c4aa1e">bUseSharedDevice</a> = false</td></tr>
 <tr class="memitem:ab0fbfe8cd9657bd4f9ea69e3ed63f038" id="r_ab0fbfe8cd9657bd4f9ea69e3ed63f038"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_product_identification.html">FProductIdentification</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0fbfe8cd9657bd4f9ea69e3ed63f038">ExcludedControllers</a></td></tr>
 <tr class="memitem:a54a6a1491dc9743f2091ab9cce619996" id="r_a54a6a1491dc9743f2091ab9cce619996"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54a6a1491dc9743f2091ab9cce619996">bAutoAssignControllers</a> = true</td></tr>
-<tr class="memitem:a3754d92f96e5834540b77623a6557da8" id="r_a3754d92f96e5834540b77623a6557da8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3754d92f96e5834540b77623a6557da8">bRevieveControllerInputsInBackground</a> = false</td></tr>
+<tr class="memitem:a984fe87038e038aea1505a50c0371d91" id="r_a984fe87038e038aea1505a50c0371d91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a984fe87038e038aea1505a50c0371d91">bReceiveControllerInputsInBackground</a> = false</td></tr>
 <tr class="memitem:ae923b19fc9bf384666a9d2eb0714ecf8" id="r_ae923b19fc9bf384666a9d2eb0714ecf8"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_device_configuration.html">FEnhancedRawInputDeviceConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae923b19fc9bf384666a9d2eb0714ecf8">DeviceConfigurations</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Plugin settings, used in Unreal Editor. </p>
+<div class="textblock"><p>General Plugin settings. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a54a6a1491dc9743f2091ab9cce619996" name="a54a6a1491dc9743f2091ab9cce619996"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54a6a1491dc9743f2091ab9cce619996">&#9670;&#160;</a></span>bAutoAssignControllers</h2>
@@ -132,7 +133,22 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When enabled, axes, buttons, and POVs are automatically assigned. This default configuration can be overwritten by creating a configuration with an empty PID and VID (0) or an individual configuration with the vendor and product id of a specific controller. If not activated, a default or individual configurations MUST be created. </p>
+<p>When enabled, axes, buttons, and PoVs are automatically assigned. This default configuration can be overwritten by creating a configuration with an empty PID and VID (0) or an individual configuration with the vendor and product id of a specific controller. If not activated, a default or individual configurations MUST be created. </p>
+
+</div>
+</div>
+<a id="a984fe87038e038aea1505a50c0371d91" name="a984fe87038e038aea1505a50c0371d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984fe87038e038aea1505a50c0371d91">&#9670;&#160;</a></span>bReceiveControllerInputsInBackground</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UEnhancedRawInputSettings::bReceiveControllerInputsInBackground = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When enabled the application recieves always inputs from the controllers, even when window is in background. </p>
 
 </div>
 </div>
@@ -151,18 +167,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3754d92f96e5834540b77623a6557da8" name="a3754d92f96e5834540b77623a6557da8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3754d92f96e5834540b77623a6557da8">&#9670;&#160;</a></span>bRevieveControllerInputsInBackground</h2>
+<a id="a2347c9628d3fdc4d56bca1af62c4aa1e" name="a2347c9628d3fdc4d56bca1af62c4aa1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2347c9628d3fdc4d56bca1af62c4aa1e">&#9670;&#160;</a></span>bUseSharedDevice</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool UEnhancedRawInputSettings::bRevieveControllerInputsInBackground = false</td>
+          <td class="memname">bool UEnhancedRawInputSettings::bUseSharedDevice = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When enabled the application recieves always inputs from the controllers, even when window is in background. </p>
+<p>When enabled, only one input device is registered in Unreal. This means that all game controllers are recognized and used, but only ONE shared device is used in Unreal. Multiplayer is not supported when this option is enabled. Corresponds to the behavior of Epic's original “Raw Input” plugin. </p>
 
 </div>
 </div>
@@ -197,8 +213,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Public/<a class="el" href="_enhanced_raw_input_settings_8h_source.html">EnhancedRawInputSettings.h</a></li>
-<li>J:/Unreal/Plugins/UEEnhancedRawInput/Source/EnhancedRawInput/Private/<b>EnhancedRawInputSettings.cpp</b></li>
+<li><a class="el" href="_enhanced_raw_input_settings_8h_source.html">EnhancedRawInputSettings.h</a></li>
+<li><b>EnhancedRawInputSettings.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

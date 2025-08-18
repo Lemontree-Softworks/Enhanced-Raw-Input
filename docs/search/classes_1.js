@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fenhancedinputpovproperties_0',['FEnhancedInputPOVProperties',['../struct_f_enhanced_input_p_o_v_properties.html',1,'']]],
+  ['fenhancedinputpovproperties_0',['FEnhancedInputPovProperties',['../struct_f_enhanced_input_pov_properties.html',1,'']]],
   ['fenhancedrawinputaxisinfo_1',['FEnhancedRawInputAxisInfo',['../struct_f_enhanced_raw_input_axis_info.html',1,'']]],
   ['fenhancedrawinputaxisproperties_2',['FEnhancedRawInputAxisProperties',['../struct_f_enhanced_raw_input_axis_properties.html',1,'']]],
   ['fenhancedrawinputbuttonproperties_3',['FEnhancedRawInputButtonProperties',['../struct_f_enhanced_raw_input_button_properties.html',1,'']]],
@@ -14,6 +14,7 @@ var searchData=
   ['fhidaxis_11',['FHidAxis',['../struct_f_hid_axis.html',1,'']]],
   ['fhidbutton_12',['FHidButton',['../struct_f_hid_button.html',1,'']]],
   ['fhiddevice_13',['FHidDevice',['../struct_f_hid_device.html',1,'']]],
-  ['fhidpov_14',['FHidPOV',['../struct_f_hid_p_o_v.html',1,'']]],
-  ['fproductidentification_15',['FProductIdentification',['../struct_f_product_identification.html',1,'']]]
+  ['fhidpov_14',['FHidPov',['../struct_f_hid_pov.html',1,'']]],
+  ['fproductidentification_15',['FProductIdentification',['../struct_f_product_identification.html',1,'']]],
+  ['fwindowshidapi_16',['FWindowsHidApi',['../struct_f_windows_hid_api.html',1,'']]]
 ];

@@ -5,7 +5,7 @@ var annotated_dup =
         [ "EnhancedRawInput", "class_unreal_build_tool_1_1_rules_1_1_enhanced_raw_input.html", null ]
       ] ]
     ] ],
-    [ "FEnhancedInputPOVProperties", "struct_f_enhanced_input_p_o_v_properties.html", "struct_f_enhanced_input_p_o_v_properties" ],
+    [ "FEnhancedInputPovProperties", "struct_f_enhanced_input_pov_properties.html", "struct_f_enhanced_input_pov_properties" ],
     [ "FEnhancedRawInputAxisInfo", "struct_f_enhanced_raw_input_axis_info.html", "struct_f_enhanced_raw_input_axis_info" ],
     [ "FEnhancedRawInputAxisProperties", "struct_f_enhanced_raw_input_axis_properties.html", "struct_f_enhanced_raw_input_axis_properties" ],
     [ "FEnhancedRawInputButtonProperties", "struct_f_enhanced_raw_input_button_properties.html", "struct_f_enhanced_raw_input_button_properties" ],
@@ -19,10 +19,11 @@ var annotated_dup =
     [ "FHidAxis", "struct_f_hid_axis.html", "struct_f_hid_axis" ],
     [ "FHidButton", "struct_f_hid_button.html", "struct_f_hid_button" ],
     [ "FHidDevice", "struct_f_hid_device.html", "struct_f_hid_device" ],
-    [ "FHidPOV", "struct_f_hid_p_o_v.html", "struct_f_hid_p_o_v" ],
+    [ "FHidPov", "struct_f_hid_pov.html", "struct_f_hid_pov" ],
     [ "FProductIdentification", "struct_f_product_identification.html", "struct_f_product_identification" ],
+    [ "FWindowsHidApi", "struct_f_windows_hid_api.html", null ],
     [ "IEnhancedRawInput", "class_i_enhanced_raw_input.html", "class_i_enhanced_raw_input" ],
+    [ "UEnhancedRawInputBlueprint", "class_u_enhanced_raw_input_blueprint.html", "class_u_enhanced_raw_input_blueprint" ],
     [ "UEnhancedRawInputLibrary", "class_u_enhanced_raw_input_library.html", "class_u_enhanced_raw_input_library" ],
-    [ "UEnhancedRawInputSettings", "class_u_enhanced_raw_input_settings.html", "class_u_enhanced_raw_input_settings" ],
-    [ "WindowsHidApi", "struct_windows_hid_api.html", null ]
+    [ "UEnhancedRawInputSettings", "class_u_enhanced_raw_input_settings.html", "class_u_enhanced_raw_input_settings" ]
 ];
