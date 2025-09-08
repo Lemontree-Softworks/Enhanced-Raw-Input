@@ -98,40 +98,35 @@ $(function(){initNavTree('_enhanced_raw_input_blueprint_8h_source.html','',''); 
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;CoreMinimal.h&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#if PLATFORM_WINDOWS</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;Windows/EnhancedRawInputWindows.h&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;EnhancedRawInputBlueprint.generated.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDeviceConnectedDelegate, FString, InterfaceName);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>UCLASS(BlueprintType)</div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_u_enhanced_raw_input_blueprint.html">   17</a></span>class ENHANCEDRAWINPUT_API <a class="code hl_class" href="class_u_enhanced_raw_input_blueprint.html">UEnhancedRawInputBlueprint</a> : public UObject</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    GENERATED_BODY()</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    UFUNCTION(BlueprintCallable, Category = <span class="stringliteral">&quot;EnhancedRawInput&quot;</span>)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_enhanced_raw_input_blueprint.html#ac8294f739dc7507125526e77141a908f">Init</a>();    </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    UPROPERTY(BlueprintAssignable, Category = <span class="stringliteral">&quot;EnhancedRawInput&quot;</span>)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_u_enhanced_raw_input_blueprint.html#a7bd20dca876167f7bb6f6b0c05159021">   29</a></span>    FDeviceConnectedDelegate <a class="code hl_variable" href="class_u_enhanced_raw_input_blueprint.html#a7bd20dca876167f7bb6f6b0c05159021">DeviceConnectedHandler</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    UPROPERTY(BlueprintAssignable, Category = <span class="stringliteral">&quot;EnhancedRawInput&quot;</span>)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_u_enhanced_raw_input_blueprint.html#ab9ccdc0357b56f2096a955cbe56454ec">   33</a></span>    FDeviceConnectedDelegate <a class="code hl_variable" href="class_u_enhanced_raw_input_blueprint.html#ab9ccdc0357b56f2096a955cbe56454ec">DeviceDisconnectedHandler</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>private:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">bool</span> bIsInitalised = false;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;EnhancedRawInputBlueprint.generated.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDeviceConnectedDelegate, FString, InterfaceName);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>UCLASS(BlueprintType)</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_u_enhanced_raw_input_blueprint.html">   12</a></span>class ENHANCEDRAWINPUT_API <a class="code hl_class" href="class_u_enhanced_raw_input_blueprint.html">UEnhancedRawInputBlueprint</a> : public UObject</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    GENERATED_BODY()</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    UFUNCTION(BlueprintCallable, Category = <span class="stringliteral">&quot;EnhancedRawInput&quot;</span>)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_u_enhanced_raw_input_blueprint.html#ac8294f739dc7507125526e77141a908f">Init</a>();    </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    UPROPERTY(BlueprintAssignable, Category = <span class="stringliteral">&quot;EnhancedRawInput&quot;</span>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_u_enhanced_raw_input_blueprint.html#a7bd20dca876167f7bb6f6b0c05159021">   24</a></span>    FDeviceConnectedDelegate <a class="code hl_variable" href="class_u_enhanced_raw_input_blueprint.html#a7bd20dca876167f7bb6f6b0c05159021">DeviceConnectedHandler</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    UPROPERTY(BlueprintAssignable, Category = <span class="stringliteral">&quot;EnhancedRawInput&quot;</span>)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_u_enhanced_raw_input_blueprint.html#ab9ccdc0357b56f2096a955cbe56454ec">   28</a></span>    FDeviceConnectedDelegate <a class="code hl_variable" href="class_u_enhanced_raw_input_blueprint.html#ab9ccdc0357b56f2096a955cbe56454ec">DeviceDisconnectedHandler</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>private:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">bool</span> bIsInitialised = false;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
 </div>
-<div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html">UEnhancedRawInputBlueprint</a></div><div class="ttdoc">Helper class to provide connected/disconnected events to blueprints.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.h:18</div></div>
-<div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html_a7bd20dca876167f7bb6f6b0c05159021"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html#a7bd20dca876167f7bb6f6b0c05159021">UEnhancedRawInputBlueprint::DeviceConnectedHandler</a></div><div class="ttdeci">FDeviceConnectedDelegate DeviceConnectedHandler</div><div class="ttdoc">Event when a device is connected, Parameter is: FString: InterfaceName.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.h:29</div></div>
-<div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html_ab9ccdc0357b56f2096a955cbe56454ec"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html#ab9ccdc0357b56f2096a955cbe56454ec">UEnhancedRawInputBlueprint::DeviceDisconnectedHandler</a></div><div class="ttdeci">FDeviceConnectedDelegate DeviceDisconnectedHandler</div><div class="ttdoc">Event when a device is disconnected, Parameter is: FString: InterfaceName.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.h:33</div></div>
+<div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html">UEnhancedRawInputBlueprint</a></div><div class="ttdoc">Helper class to provide connected/disconnected events to blueprints.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.h:13</div></div>
+<div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html_a7bd20dca876167f7bb6f6b0c05159021"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html#a7bd20dca876167f7bb6f6b0c05159021">UEnhancedRawInputBlueprint::DeviceConnectedHandler</a></div><div class="ttdeci">FDeviceConnectedDelegate DeviceConnectedHandler</div><div class="ttdoc">Event when a device is connected, Parameter is: FString: InterfaceName.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.h:24</div></div>
+<div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html_ab9ccdc0357b56f2096a955cbe56454ec"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html#ab9ccdc0357b56f2096a955cbe56454ec">UEnhancedRawInputBlueprint::DeviceDisconnectedHandler</a></div><div class="ttdeci">FDeviceConnectedDelegate DeviceDisconnectedHandler</div><div class="ttdoc">Event when a device is disconnected, Parameter is: FString: InterfaceName.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.h:28</div></div>
 <div class="ttc" id="aclass_u_enhanced_raw_input_blueprint_html_ac8294f739dc7507125526e77141a908f"><div class="ttname"><a href="class_u_enhanced_raw_input_blueprint.html#ac8294f739dc7507125526e77141a908f">UEnhancedRawInputBlueprint::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">Call this function right after construction or events will not work.</div><div class="ttdef"><b>Definition</b> EnhancedRawInputBlueprint.cpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -139,7 +134,7 @@ $(function(){initNavTree('_enhanced_raw_input_blueprint_8h_source.html','',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_feff140f4a693dc5833fe8f00989f54b.html">Public</a></li><li class="navelem"><b>EnhancedRawInputBlueprint.h</b></li>
+    <li class="navelem"><a href="dir_39f16a36e1801e884fe807b77a8f625f.html">DirectInputTest</a></li><li class="navelem"><a href="dir_03e9484b8f3693b138c961ae23752770.html">Plugins</a></li><li class="navelem"><a href="dir_df38b3d0a78f3fca3e180053ec1c358a.html">UEEnhancedRawInput</a></li><li class="navelem"><a href="dir_f2a8d5c0d5647b09adc6e542898b18cd.html">Source</a></li><li class="navelem"><a href="dir_4337afe05a76e9b91b78d04c30bfe79e.html">EnhancedRawInput</a></li><li class="navelem"><a href="dir_99f5dbd394b7bf0f8d46f4cddc5152f8.html">Public</a></li><li class="navelem"><b>EnhancedRawInputBlueprint.h</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

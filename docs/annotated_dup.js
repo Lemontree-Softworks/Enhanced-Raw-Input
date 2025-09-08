@@ -24,6 +24,6 @@ var annotated_dup =
     [ "FWindowsHidApi", "struct_f_windows_hid_api.html", null ],
     [ "IEnhancedRawInput", "class_i_enhanced_raw_input.html", "class_i_enhanced_raw_input" ],
     [ "UEnhancedRawInputBlueprint", "class_u_enhanced_raw_input_blueprint.html", "class_u_enhanced_raw_input_blueprint" ],
-    [ "UEnhancedRawInputLibrary", "class_u_enhanced_raw_input_library.html", "class_u_enhanced_raw_input_library" ],
+    [ "UEnhancedRawInputLibrary", "class_u_enhanced_raw_input_library.html", null ],
     [ "UEnhancedRawInputSettings", "class_u_enhanced_raw_input_settings.html", "class_u_enhanced_raw_input_settings" ]
 ];

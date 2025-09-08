@@ -15,7 +15,7 @@ var searchData=
   ['fhidbutton_12',['FHidButton',['../struct_f_hid_button.html',1,'']]],
   ['fhiddevice_13',['FHidDevice',['../struct_f_hid_device.html',1,'']]],
   ['fhidpov_14',['FHidPov',['../struct_f_hid_pov.html',1,'']]],
-  ['finddevicebyinterfacename_15',['FindDeviceByInterfaceName',['../class_f_enhanced_raw_input_windows.html#af921b1bf471685278f551b7654a90e87',1,'FEnhancedRawInputWindows']]],
+  ['finddevicebyinterfacename_15',['FindDeviceByInterfaceName',['../class_f_enhanced_raw_input_windows.html#a13589cf46c6618f1ec722f1f1df1bb39',1,'FEnhancedRawInputWindows']]],
   ['finddevicebyuseranddeviceid_16',['FindDeviceByUserAndDeviceId',['../class_f_enhanced_raw_input_windows.html#a5596df5f3389020f1ac002c15a61b7f8',1,'FEnhancedRawInputWindows']]],
   ['fproductidentification_17',['FProductIdentification',['../struct_f_product_identification.html',1,'']]],
   ['fwindowshidapi_18',['FWindowsHidApi',['../struct_f_windows_hid_api.html',1,'']]]
