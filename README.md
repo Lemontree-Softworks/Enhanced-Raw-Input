@@ -34,3 +34,4 @@ Please note that the demo project does NOT include the “Enhanced Raw Input” 
 
 ## Change log:
 * 1.0 Inital Release
+* 1.0.1 Minor code adjustments and typos corrected

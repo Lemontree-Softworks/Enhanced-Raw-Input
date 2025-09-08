@@ -136,8 +136,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> (flo
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SendControllerEvents</b> () override</td></tr>
 <tr class="memitem:a1721e55109097d54123fea5b3dab62f9" id="r_a1721e55109097d54123fea5b3dab62f9"><td class="memItemLeft" align="right" valign="top"><a id="a1721e55109097d54123fea5b3dab62f9" name="a1721e55109097d54123fea5b3dab62f9"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsForceFeedback</b> (int32 ControllerId) override</td></tr>
-<tr class="memitem:a84a87fc79a5a3161f873255820ced051" id="r_a84a87fc79a5a3161f873255820ced051"><td class="memItemLeft" align="right" valign="top"><a id="a84a87fc79a5a3161f873255820ced051" name="a84a87fc79a5a3161f873255820ced051"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessMessage</b> (HWND hwnd, uint32 msg, WPARAM wParam, LPARAM lParam, int32 &amp;OutResult) override</td></tr>
+<tr class="memitem:ab9540e716958f22074ebd7f28fb64f52" id="r_ab9540e716958f22074ebd7f28fb64f52"><td class="memItemLeft" align="right" valign="top"><a id="ab9540e716958f22074ebd7f28fb64f52" name="ab9540e716958f22074ebd7f28fb64f52"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessMessage</b> (HWND Hwnd, uint32 Msg, WPARAM WParam, LPARAM LParam, int32 &amp;OutResult) override</td></tr>
 <tr class="memitem:a9e483d73cf32376383c8efc6208e1985" id="r_a9e483d73cf32376383c8efc6208e1985"><td class="memItemLeft" align="right" valign="top"><a id="a9e483d73cf32376383c8efc6208e1985" name="a9e483d73cf32376383c8efc6208e1985"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateDevices</b> ()</td></tr>
 <tr class="memdesc:a9e483d73cf32376383c8efc6208e1985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the list of all connected controllers. Notifies the engine of any new or removed controllers. <br /></td></tr>
@@ -145,21 +145,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateDevices</b> 
 <tr class="memdesc:a74ba1cda3911400c6a811e55736baf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all currently connected devices.  <br /></td></tr>
 <tr class="memitem:a5596df5f3389020f1ac002c15a61b7f8" id="r_a5596df5f3389020f1ac002c15a61b7f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_hid_device.html">FHidDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5596df5f3389020f1ac002c15a61b7f8">FindDeviceByUserAndDeviceId</a> (const FPlatformUserId UserId, const FInputDeviceId DeviceId)</td></tr>
 <tr class="memdesc:a5596df5f3389020f1ac002c15a61b7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a device by provided user and device ID.  <br /></td></tr>
-<tr class="memitem:af921b1bf471685278f551b7654a90e87" id="r_af921b1bf471685278f551b7654a90e87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_hid_device.html">FHidDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af921b1bf471685278f551b7654a90e87">FindDeviceByInterfaceName</a> (FString InterfaceName)</td></tr>
-<tr class="memdesc:af921b1bf471685278f551b7654a90e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a device by provided interface name.  <br /></td></tr>
-<tr class="memitem:a05256301dd562327855f122c98ca9d55" id="r_a05256301dd562327855f122c98ca9d55"><td class="memItemLeft" align="right" valign="top">TMap&lt; int32, <a class="el" href="struct_f_hid_axis.html">FHidAxis</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05256301dd562327855f122c98ca9d55">GetAxisInfo</a> (FString InterfaceName)</td></tr>
-<tr class="memdesc:a05256301dd562327855f122c98ca9d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all axis for a specific device.  <br /></td></tr>
-<tr class="memitem:a2facea542fa668c5be2d9b7ecbc24c46" id="r_a2facea542fa668c5be2d9b7ecbc24c46"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_hid_pov.html">FHidPov</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2facea542fa668c5be2d9b7ecbc24c46">GetPovInfo</a> (FString InterfaceName)</td></tr>
-<tr class="memdesc:a2facea542fa668c5be2d9b7ecbc24c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all PoVs / Hat switches / D-PADs for a specific device.  <br /></td></tr>
-<tr class="memitem:a2530a83ee510539e57ca3024f9c0f88b" id="r_a2530a83ee510539e57ca3024f9c0f88b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2530a83ee510539e57ca3024f9c0f88b">SetDeviceActivity</a> (FString InterfaceName, bool bIsActive)</td></tr>
-<tr class="memdesc:a2530a83ee510539e57ca3024f9c0f88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activity of the device.  <br /></td></tr>
+<tr class="memitem:a13589cf46c6618f1ec722f1f1df1bb39" id="r_a13589cf46c6618f1ec722f1f1df1bb39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_hid_device.html">FHidDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13589cf46c6618f1ec722f1f1df1bb39">FindDeviceByInterfaceName</a> (const FString &amp;InterfaceName)</td></tr>
+<tr class="memdesc:a13589cf46c6618f1ec722f1f1df1bb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a device by provided interface name.  <br /></td></tr>
+<tr class="memitem:ab6a9ddc90b3bf414b5f60646f43b0eb4" id="r_ab6a9ddc90b3bf414b5f60646f43b0eb4"><td class="memItemLeft" align="right" valign="top">TMap&lt; int32, <a class="el" href="struct_f_hid_axis.html">FHidAxis</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a9ddc90b3bf414b5f60646f43b0eb4">GetAxisInfo</a> (const FString &amp;InterfaceName)</td></tr>
+<tr class="memdesc:ab6a9ddc90b3bf414b5f60646f43b0eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all axis for a specific device.  <br /></td></tr>
+<tr class="memitem:a5a109feb72073138469ea11dd9ef74ae" id="r_a5a109feb72073138469ea11dd9ef74ae"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_hid_pov.html">FHidPov</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a109feb72073138469ea11dd9ef74ae">GetPovInfo</a> (const FString &amp;InterfaceName)</td></tr>
+<tr class="memdesc:a5a109feb72073138469ea11dd9ef74ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all PoVs / Hat switches / D-PADs for a specific device.  <br /></td></tr>
+<tr class="memitem:a65c2c8e657dd98ba570413a2932b476a" id="r_a65c2c8e657dd98ba570413a2932b476a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65c2c8e657dd98ba570413a2932b476a">SetDeviceActivity</a> (const FString &amp;InterfaceName, bool bIsActive)</td></tr>
+<tr class="memdesc:a65c2c8e657dd98ba570413a2932b476a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activity of the device.  <br /></td></tr>
 <tr class="memitem:abd630ac2a1d71c30ef40b4734a126565" id="r_abd630ac2a1d71c30ef40b4734a126565"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd630ac2a1d71c30ef40b4734a126565">NotificationCallback</a> (CM_NOTIFY_ACTION Action)</td></tr>
 <tr class="memdesc:abd630ac2a1d71c30ef40b4734a126565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal callback for hotplug detection, not for public use.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_i_enhanced_raw_input"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_enhanced_raw_input')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_i_enhanced_raw_input.html">IEnhancedRawInput</a></td></tr>
 <tr class="memitem:acc0cde2148ba7b237deb54ba862ab504 inherit pub_methods_class_i_enhanced_raw_input" id="r_acc0cde2148ba7b237deb54ba862ab504"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>IEnhancedRawInput</b> (const TSharedRef&lt; FGenericApplicationMessageHandler &gt; &amp;InMessageHandler)</td></tr>
 <tr class="memitem:abce420efad54a8e2ffccba9463aa1977 inherit pub_methods_class_i_enhanced_raw_input" id="r_abce420efad54a8e2ffccba9463aa1977"><td class="memItemLeft" align="right" valign="top">FEnhancedRawInputDataDelegate &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_enhanced_raw_input.html#abce420efad54a8e2ffccba9463aa1977">GetDataReceivedHandler</a> ()</td></tr>
-<tr class="memdesc:abce420efad54a8e2ffccba9463aa1977 inherit pub_methods_class_i_enhanced_raw_input"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegete for raw, unprocessed HID data.  <br /></td></tr>
+<tr class="memdesc:abce420efad54a8e2ffccba9463aa1977 inherit pub_methods_class_i_enhanced_raw_input"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate for raw, unprocessed HID data.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -186,8 +186,8 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Windows Implementation. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="af921b1bf471685278f551b7654a90e87" name="af921b1bf471685278f551b7654a90e87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af921b1bf471685278f551b7654a90e87">&#9670;&#160;</a></span>FindDeviceByInterfaceName()</h2>
+<a id="a13589cf46c6618f1ec722f1f1df1bb39" name="a13589cf46c6618f1ec722f1f1df1bb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13589cf46c6618f1ec722f1f1df1bb39">&#9670;&#160;</a></span>FindDeviceByInterfaceName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +195,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname"><a class="el" href="struct_f_hid_device.html">FHidDevice</a> * FEnhancedRawInputWindows::FindDeviceByInterfaceName </td>
           <td>(</td>
-          <td class="paramtype">FString</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span></td><td>)</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -242,8 +242,8 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a id="a05256301dd562327855f122c98ca9d55" name="a05256301dd562327855f122c98ca9d55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05256301dd562327855f122c98ca9d55">&#9670;&#160;</a></span>GetAxisInfo()</h2>
+<a id="ab6a9ddc90b3bf414b5f60646f43b0eb4" name="ab6a9ddc90b3bf414b5f60646f43b0eb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a9ddc90b3bf414b5f60646f43b0eb4">&#9670;&#160;</a></span>GetAxisInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +251,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">TMap&lt; int32, <a class="el" href="struct_f_hid_axis.html">FHidAxis</a> &gt; FEnhancedRawInputWindows::GetAxisInfo </td>
           <td>(</td>
-          <td class="paramtype">FString</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span></td><td>)</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -288,8 +288,8 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a id="a2facea542fa668c5be2d9b7ecbc24c46" name="a2facea542fa668c5be2d9b7ecbc24c46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2facea542fa668c5be2d9b7ecbc24c46">&#9670;&#160;</a></span>GetPovInfo()</h2>
+<a id="a5a109feb72073138469ea11dd9ef74ae" name="a5a109feb72073138469ea11dd9ef74ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a109feb72073138469ea11dd9ef74ae">&#9670;&#160;</a></span>GetPovInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +297,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">TArray&lt; <a class="el" href="struct_f_hid_pov.html">FHidPov</a> &gt; FEnhancedRawInputWindows::GetPovInfo </td>
           <td>(</td>
-          <td class="paramtype">FString</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span></td><td>)</td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -332,7 +332,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 <p>Internal callback for hotplug detection, not for public use. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Action</td><td>Notity Action </td></tr>
+    <tr><td class="paramname">Action</td><td>Notify Action </td></tr>
   </table>
   </dd>
 </dl>
@@ -467,8 +467,8 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
-<a id="a2530a83ee510539e57ca3024f9c0f88b" name="a2530a83ee510539e57ca3024f9c0f88b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2530a83ee510539e57ca3024f9c0f88b">&#9670;&#160;</a></span>SetDeviceActivity()</h2>
+<a id="a65c2c8e657dd98ba570413a2932b476a" name="a65c2c8e657dd98ba570413a2932b476a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65c2c8e657dd98ba570413a2932b476a">&#9670;&#160;</a></span>SetDeviceActivity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +476,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">void FEnhancedRawInputWindows::SetDeviceActivity </td>
           <td>(</td>
-          <td class="paramtype">FString</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span>, </td>
+          <td class="paramtype">const FString &amp;</td>          <td class="paramname"><span class="paramname"><em>InterfaceName</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -490,7 +490,7 @@ FEnhancedRawInputDataDelegate&#160;</td><td class="memItemRight" valign="bottom"
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InterfaceName</td><td></td></tr>
-    <tr><td class="paramname">Activity</td><td></td></tr>
+    <tr><td class="paramname">bIsActive</td><td></td></tr>
   </table>
   </dd>
 </dl>
