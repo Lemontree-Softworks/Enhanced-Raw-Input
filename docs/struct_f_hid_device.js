@@ -11,8 +11,10 @@ var struct_f_hid_device =
     [ "Handle", "struct_f_hid_device.html#ac78030bf014efa9fb45747ea1b6ad7fa", null ],
     [ "InterfaceName", "struct_f_hid_device.html#a657d1a2fc9c9da0c8d629253b9643d73", null ],
     [ "Manufacturer", "struct_f_hid_device.html#af3b6554f3613e666a228d8050bbf3c9c", null ],
+    [ "MultiControllerId", "struct_f_hid_device.html#a5c5600ba15561d7774240c37db2d82f0", null ],
     [ "NumberInputValueCaps", "struct_f_hid_device.html#ac70aa9731b7e3629e4e76b258a4d1280", null ],
     [ "PoVs", "struct_f_hid_device.html#a9446c063214475f21e006f7e8b2841f5", null ],
+    [ "PreParsedDataBuffer", "struct_f_hid_device.html#acbcf7c2e036ece5d1e858de8a4396d59", null ],
     [ "ProductName", "struct_f_hid_device.html#acc3671334d119817daa00753bcc76267", null ],
     [ "SerialNumber", "struct_f_hid_device.html#a6f414b53de49782e9711ee30ea7e83c6", null ],
     [ "UserId", "struct_f_hid_device.html#a2fa329b7f7cb7bb98a154406c5c0cec6", null ]

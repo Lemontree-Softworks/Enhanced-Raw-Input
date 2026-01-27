@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Enhanced Raw Input Logo-256x256.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Enhanced Raw Input<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Enhanced Raw Input<span id="projectnumber">&#160;1.2</span>
    </div>
    <div id="projectbrief">Enhanced Raw Input for Unreal Engine</div>
   </td>
@@ -113,7 +113,7 @@ virtual FName&#160;</td><td class="memItemRight" valign="bottom"><b>GetCategoryN
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9a88c7846ee971686934266f02e6f231" id="r_a9a88c7846ee971686934266f02e6f231"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a88c7846ee971686934266f02e6f231">bRegisterAllDevices</a> = true</td></tr>
-<tr class="memitem:a2347c9628d3fdc4d56bca1af62c4aa1e" id="r_a2347c9628d3fdc4d56bca1af62c4aa1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2347c9628d3fdc4d56bca1af62c4aa1e">bUseSharedDevice</a> = false</td></tr>
+<tr class="memitem:aea51f0b596fc3ddeab41a4e6ac870b0e" id="r_aea51f0b596fc3ddeab41a4e6ac870b0e"><td class="memItemLeft" align="right" valign="top">EControllerMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea51f0b596fc3ddeab41a4e6ac870b0e">ControllerMode</a> = EControllerMode::Standard</td></tr>
 <tr class="memitem:ab0fbfe8cd9657bd4f9ea69e3ed63f038" id="r_ab0fbfe8cd9657bd4f9ea69e3ed63f038"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="struct_f_product_identification.html">FProductIdentification</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0fbfe8cd9657bd4f9ea69e3ed63f038">ExcludedControllers</a></td></tr>
 <tr class="memitem:a54a6a1491dc9743f2091ab9cce619996" id="r_a54a6a1491dc9743f2091ab9cce619996"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54a6a1491dc9743f2091ab9cce619996">bAutoAssignControllers</a> = true</td></tr>
 <tr class="memitem:a984fe87038e038aea1505a50c0371d91" id="r_a984fe87038e038aea1505a50c0371d91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a984fe87038e038aea1505a50c0371d91">bReceiveControllerInputsInBackground</a> = false</td></tr>
@@ -167,18 +167,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2347c9628d3fdc4d56bca1af62c4aa1e" name="a2347c9628d3fdc4d56bca1af62c4aa1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2347c9628d3fdc4d56bca1af62c4aa1e">&#9670;&#160;</a></span>bUseSharedDevice</h2>
+<a id="aea51f0b596fc3ddeab41a4e6ac870b0e" name="aea51f0b596fc3ddeab41a4e6ac870b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea51f0b596fc3ddeab41a4e6ac870b0e">&#9670;&#160;</a></span>ControllerMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool UEnhancedRawInputSettings::bUseSharedDevice = false</td>
+          <td class="memname">EControllerMode UEnhancedRawInputSettings::ControllerMode = EControllerMode::Standard</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>When enabled, only one input device is registered in Unreal. This means that all game controllers are recognized and used, but only ONE shared device is used in Unreal. Multiplayer is not supported when this option is enabled. Corresponds to the behavior of Epic's original “Raw Input” plugin. </p>
+<p>Controller Mode: Standard: Allows local multiplayer: First Controller is assign to Player 0, Second controller ro Player 1, and so on Shared Device: All game controllers are recognized and used, but only ONE shared device is used in Unreal and assignd to player 0 and act parallel. Multiplayer is not supported when this option is enabled. Corresponds to the behavior of Epic's original “Raw Input” plugin. Multi: All game controllers are recognized and used but are only available for Player 0 and can be addressed separately. </p>
 
 </div>
 </div>

@@ -6,6 +6,7 @@ for Unreal Engine
 ## Featues
 * Supports all HID gamepad/joystick devices (steering wheels, flight controllers, joysticks, including gamepads like Xbox Controller, etc.)
 * Hotplug support
+* Up to six controllers that can be addressed and used simultaneously
 * Support for multiple simultaneously connected devices, e.g. for multiplayer
 * Automatic detection of the axis range and mapping to gamepad range (-1 to +1), axis range (0 to 1) or raw values of the driver (configurable)
 * 100% compatible to "Enhanced Input"
@@ -25,7 +26,7 @@ Enhanced Raw Input can be purchased at [FAB](https://www.fab.com/listings/ea8f47
 
 Please read the [Quick start guide](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/Quick-Start) and the [FAQ](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/FAQ) as well as the documentation below.
 
-See also Demo Project in "Demo" Folder.
+See also Demo Project in "Demo" Folder and Demo hao to use two conb
 Please note that the demo project does NOT include the “Enhanced Raw Input” plugin; it must first be downloaded from FAB and installed.
 
 ## Documentation
@@ -36,3 +37,4 @@ Please note that the demo project does NOT include the “Enhanced Raw Input” 
 * 1.0 Inital Release
 * 1.0.1 Minor code adjustments and typos corrected
 * 1.1 Better handling for Gamepad D-Pads (Dualshock), Performance tweaks
+* 1.2 Multi Controller support, Input/Output Pins for Blueprint fuctions, Version for Unreal 5.7 

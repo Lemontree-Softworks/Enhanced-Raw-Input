@@ -4,5 +4,6 @@ var searchData=
   ['max_1',['Max',['../struct_f_hid_axis.html#a1251755e49b37efda84ad24aeac76b8f',1,'FHidAxis']]],
   ['maxvalue_2',['MaxValue',['../struct_f_enhanced_raw_input_axis_info.html#abace39be02a67a2d774144a6d9332cae',1,'FEnhancedRawInputAxisInfo::MaxValue'],['../struct_f_enhanced_raw_input_pov_info.html#a15869c5ec940226f117f392e9ea27c8d',1,'FEnhancedRawInputPovInfo::MaxValue']]],
   ['min_3',['Min',['../struct_f_hid_axis.html#a701640c9b7c82ae0d6f01d355c033466',1,'FHidAxis']]],
-  ['minvalue_4',['MinValue',['../struct_f_enhanced_raw_input_axis_info.html#ab9b07113e2ad9e7baa3203162f12a69e',1,'FEnhancedRawInputAxisInfo::MinValue'],['../struct_f_enhanced_raw_input_pov_info.html#a3afbc3c7187bc39e735a70bccd403d36',1,'FEnhancedRawInputPovInfo::MinValue']]]
+  ['minvalue_4',['MinValue',['../struct_f_enhanced_raw_input_axis_info.html#ab9b07113e2ad9e7baa3203162f12a69e',1,'FEnhancedRawInputAxisInfo::MinValue'],['../struct_f_enhanced_raw_input_pov_info.html#a3afbc3c7187bc39e735a70bccd403d36',1,'FEnhancedRawInputPovInfo::MinValue']]],
+  ['multicontrollerid_5',['MultiControllerId',['../struct_f_enhanced_raw_input_device_info.html#a7574b65ac7a5ea105ca85136dfbf205d',1,'FEnhancedRawInputDeviceInfo::MultiControllerId'],['../struct_f_hid_device.html#a5c5600ba15561d7774240c37db2d82f0',1,'FHidDevice::MultiControllerId']]]
 ];

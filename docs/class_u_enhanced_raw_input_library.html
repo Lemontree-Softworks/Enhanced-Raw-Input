@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="Enhanced Raw Input Logo-256x256.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Enhanced Raw Input<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Enhanced Raw Input<span id="projectnumber">&#160;1.2</span>
    </div>
    <div id="projectbrief">Enhanced Raw Input for Unreal Engine</div>
   </td>
@@ -122,19 +122,21 @@ static TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_axis_info.html
 <tr class="memitem:a072fd33b0505a491f96ee68f166b953b" id="r_a072fd33b0505a491f96ee68f166b953b"><td class="memItemLeft" align="right" valign="top"><a id="a072fd33b0505a491f96ee68f166b953b" name="a072fd33b0505a491f96ee68f166b953b"></a>
 static TArray&lt; <a class="el" href="struct_f_enhanced_raw_input_pov_info.html">FEnhancedRawInputPovInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPovInfosForDevice</b> (const FString &amp;InterfaceName)</td></tr>
 <tr class="memdesc:a072fd33b0505a491f96ee68f166b953b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about all PoVs for a specific device. <br /></td></tr>
-<tr class="memitem:af59c89749cb73124011b89e9d16aa265" id="r_af59c89749cb73124011b89e9d16aa265"><td class="memItemLeft" align="right" valign="top"><a id="af59c89749cb73124011b89e9d16aa265" name="af59c89749cb73124011b89e9d16aa265"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeviceActivity</b> (const FString &amp;InterfaceName, bool bIsActive)</td></tr>
-<tr class="memdesc:af59c89749cb73124011b89e9d16aa265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activity of the device. <br /></td></tr>
-<tr class="memitem:a978150e8285a3089d04f3b5dade0246b" id="r_a978150e8285a3089d04f3b5dade0246b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a978150e8285a3089d04f3b5dade0246b">QueryDevices</a> ()</td></tr>
+<tr class="memitem:a853344b79d38edf6c95577c5a29fc180" id="r_a853344b79d38edf6c95577c5a29fc180"><td class="memItemLeft" align="right" valign="top"><a id="a853344b79d38edf6c95577c5a29fc180" name="a853344b79d38edf6c95577c5a29fc180"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeviceActivity</b> (const FString &amp;InterfaceName, bool bIsActive)</td></tr>
+<tr class="memdesc:a853344b79d38edf6c95577c5a29fc180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the activity of the device. <br /></td></tr>
+<tr class="memitem:ab7eba4d42af216cc1f973df4fe608129" id="r_ab7eba4d42af216cc1f973df4fe608129"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7eba4d42af216cc1f973df4fe608129">QueryDevices</a> ()</td></tr>
 <tr class="memitem:aaa92e890bfb935332e743d76a0e6bcc2" id="r_aaa92e890bfb935332e743d76a0e6bcc2"><td class="memItemLeft" align="right" valign="top"><a id="aaa92e890bfb935332e743d76a0e6bcc2" name="aaa92e890bfb935332e743d76a0e6bcc2"></a>
 static <a class="el" href="class_u_enhanced_raw_input_blueprint.html">UEnhancedRawInputBlueprint</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnhancedRawInputBlueprint</b> ()</td></tr>
 <tr class="memdesc:aaa92e890bfb935332e743d76a0e6bcc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a '<a class="el" href="class_u_enhanced_raw_input_blueprint.html" title="Helper class to provide connected/disconnected events to blueprints.">UEnhancedRawInputBlueprint</a>' Object, that can be used to receive device connect and disconnect events. <br /></td></tr>
+<tr class="memitem:a48a4f4d41764966be392381610ba635d" id="r_a48a4f4d41764966be392381610ba635d"><td class="memItemLeft" align="right" valign="top"><a id="a48a4f4d41764966be392381610ba635d" name="a48a4f4d41764966be392381610ba635d"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetMultiControllerId</b> (const int Id, const FString &amp;InterfaceName)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to use from Blueprints. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a978150e8285a3089d04f3b5dade0246b" name="a978150e8285a3089d04f3b5dade0246b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a978150e8285a3089d04f3b5dade0246b">&#9670;&#160;</a></span>QueryDevices()</h2>
+<a id="ab7eba4d42af216cc1f973df4fe608129" name="ab7eba4d42af216cc1f973df4fe608129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7eba4d42af216cc1f973df4fe608129">&#9670;&#160;</a></span>QueryDevices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +145,7 @@ static <a class="el" href="class_u_enhanced_raw_input_blueprint.html">UEnhancedR
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool UEnhancedRawInputLibrary::QueryDevices </td>
+          <td class="memname">void UEnhancedRawInputLibrary::QueryDevices </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

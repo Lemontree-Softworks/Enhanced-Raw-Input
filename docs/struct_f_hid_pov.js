@@ -6,7 +6,7 @@ var struct_f_hid_pov =
     [ "HasButtonValue", "struct_f_hid_pov.html#acc50cf503bc2f9ef4220dfeab4c7ec20", null ],
     [ "UpdateButtonValues", "struct_f_hid_pov.html#a66a09e4c0c88967fe05cbfff0cff92c1", null ],
     [ "ButtonKeyNames", "struct_f_hid_pov.html#aff03e9a132b389c2012e532e5aea9cb2", null ],
-    [ "ButtonStates", "struct_f_hid_pov.html#a65ba82cd74d55134b10f4cee851ada0e", null ],
+    [ "CurrentButtonStates", "struct_f_hid_pov.html#ac05571972136d2440ec1e2ce4d61d8af", null ],
     [ "DataIndex", "struct_f_hid_pov.html#a7a0627ada391c8b54ef1d1f7b8eb0a55", null ],
     [ "PovOutputType", "struct_f_hid_pov.html#a2ccce54d6185d8ae17377141b02f1442", null ]
 ];
