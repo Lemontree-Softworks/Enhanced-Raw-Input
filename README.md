@@ -26,7 +26,7 @@ Enhanced Raw Input can be purchased at [FAB](https://www.fab.com/listings/ea8f47
 
 Please read the [Quick start guide](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/Quick-Start) and the [FAQ](https://github.com/Lemontree-Softworks/Enhanced-Raw-Input/wiki/FAQ) as well as the documentation below.
 
-See also Demo Project in "Demo" Folder and Demo hao to use two conb
+See also Demo Project in "Demo" Folder and the Multicontroller-Demo how to use two controllers simultaneously.
 Please note that the demo project does NOT include the “Enhanced Raw Input” plugin; it must first be downloaded from FAB and installed.
 
 ## Documentation
